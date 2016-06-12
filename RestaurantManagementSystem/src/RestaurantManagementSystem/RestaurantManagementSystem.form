@@ -706,11 +706,6 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\NTC\Desktop\images.jpg"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>

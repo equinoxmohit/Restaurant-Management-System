@@ -10,6 +10,7 @@ package RestaurantManagementSystem;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import javax.swing.UIManager;
 
 /**
  *
@@ -900,29 +901,29 @@ public class RestaurantManagementSystem extends javax.swing.JFrame {
         cafeItem[4] = Double.parseDouble(jTextFieldCreamedPie.getText());
         cafeItem[5] = Double.parseDouble(jTextFieldWaterMelon.getText());
         cafeItem[6] = Double.parseDouble(jTextFieldDickyDan.getText());
-        f[0]=Double.parseDouble(jTextFieldCostOfFoodItem.getText());
-       f[1]=Double.parseDouble(jTextFieldCostOfCafeItem.getText());
-       f[2]=Double.parseDouble(jTextFieldServiceCharge.getText());
-       
-       double cTotal=(f[0]+f[1]+f[2]);
-       
-       String iTaxTotal=String.format("Rs. %.2f", cTotal/100);
-       
-       double subTotal=(cTotal);
-       String iSubTotal=String.format("Rs %.2f", subTotal );
-       
-       double allTotal=(cTotal);
-       double serviceCharge=100.00;
-       String iTotal=String.format("Rs %.2f", allTotal+(allTotal/100)+serviceCharge);
+        f[0] = Double.parseDouble(jTextFieldCostOfFoodItem.getText());
+        f[1] = Double.parseDouble(jTextFieldCostOfCafeItem.getText());
+        f[2] = Double.parseDouble(jTextFieldServiceCharge.getText());
+
+        double cTotal = (f[0] + f[1] + f[2]);
+
+        String iTaxTotal = String.format("Rs. %.2f", cTotal / 100);
+
+        double subTotal = (cTotal);
+        String iSubTotal = String.format("Rs %.2f", subTotal);
+
+        double allTotal = (cTotal);
+        double serviceCharge = 100.00;
+        String iTotal = String.format("Rs %.2f", allTotal + (allTotal / 100) + serviceCharge);
         //total
-       //Calender--to add todays time and date
+        //Calender--to add todays time and date
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Calendar cal = Calendar.getInstance();
         //(cal.getTime()))
         int random = 1326 + (int) (Math.random() * 4232);
 
         //append to the textarea to print the receipt
-        jTextAreaReceipt.append("\t\tRestaurant Bill Receipt\t\t\n\t"+ "\n\t-------------------------------------------------------------------------------------------\t\n\t" + "Chicken MoMo:\t\t\t" + foodItem[0] + "\n\tChicken Chowmin:\t\t" + foodItem[1] + "\n\tChicken Burger:\t\t" + foodItem[2] + "\n\tChicken Pizza:\t\t\t" + foodItem[3] + "\n\tFrench Fries:\t\t\t" + foodItem[4] + "\n\tChicken Chilly:\t\t\t" + foodItem[5] + "\n\tChicken Wings:\t\t\t" + foodItem[6] + "\n\t-------------------------------------------------------------------------------------------\t\n" + "\tCold Drinks:\t\t\t" + cafeItem[0] + "\n\tIced Cappuccino:\t\t" + cafeItem[1] + "\n\tBlack Forest:\t\t\t" + cafeItem[2] + "\n\tBlueberry Cake:\t\t\t" + cafeItem[3] + "\n\tCreamed Pie:\t\t\t" + cafeItem[4] + "\n\tWatermelon Raspe:\t\t" + cafeItem[5] + "\n\tDicky Dan Pie:\t\t\t" + cafeItem[6] + "\n\t-----------------------------------------------------------------------------------------\t\n\t\t"+ "\n\tTax:\t\t\t" + iTaxTotal+ "\n\tSubTotal:\t\t\t" + iSubTotal + "\n\tTotal:\t\t\t" + iTotal + "\n\t-----------------------------------------------------------------------------------------\t\n\t\t" + cal.getTime() + "\n\t-----------------------------------------------------------------------------------------\t\n" + "\t\t--------Thank You---------");
+        jTextAreaReceipt.append("\t\tRestaurant Bill Receipt\t\t\n\t" + "\n\t-------------------------------------------------------------------------------------------\t\n\t" + "Chicken MoMo:\t\t\t" + foodItem[0] + "\n\tChicken Chowmin:\t\t" + foodItem[1] + "\n\tChicken Burger:\t\t" + foodItem[2] + "\n\tChicken Pizza:\t\t\t" + foodItem[3] + "\n\tFrench Fries:\t\t\t" + foodItem[4] + "\n\tChicken Chilly:\t\t\t" + foodItem[5] + "\n\tChicken Wings:\t\t\t" + foodItem[6] + "\n\t-------------------------------------------------------------------------------------------\t\n" + "\tCold Drinks:\t\t\t" + cafeItem[0] + "\n\tIced Cappuccino:\t\t" + cafeItem[1] + "\n\tBlack Forest:\t\t\t" + cafeItem[2] + "\n\tBlueberry Cake:\t\t\t" + cafeItem[3] + "\n\tCreamed Pie:\t\t\t" + cafeItem[4] + "\n\tWatermelon Raspe:\t\t" + cafeItem[5] + "\n\tDicky Dan Pie:\t\t\t" + cafeItem[6] + "\n\t-----------------------------------------------------------------------------------------\t\n\t\t" + "\n\tTax:\t\t\t" + iTaxTotal + "\n\tSubTotal:\t\t\t" + iSubTotal + "\n\tTotal:\t\t\t" + iTotal + "\n\t-----------------------------------------------------------------------------------------\t\n\t\t" + cal.getTime() + "\n\t-----------------------------------------------------------------------------------------\t\n" + "\t\t--------Thank You---------");
 
         jTextAreaRandomId.append("Receipt ID\t" + random);
 
@@ -1085,11 +1086,11 @@ public class RestaurantManagementSystem extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldBlackForestMouseClicked
 
     private void jTextFieldBlueberryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldBlueberryMouseClicked
-     
+
     }//GEN-LAST:event_jTextFieldBlueberryMouseClicked
 
     private void jTextFieldCreamedPieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldCreamedPieMouseClicked
-     
+
     }//GEN-LAST:event_jTextFieldCreamedPieMouseClicked
 
     private void jTextFieldWaterMelonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldWaterMelonMouseClicked
@@ -1157,7 +1158,7 @@ public class RestaurantManagementSystem extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxBlueberryMouseClicked
 
     private void jCheckBoxCreamedPieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxCreamedPieMouseClicked
-          double cCafeItem = Double.parseDouble(jTextFieldCostOfCafeItem.getText());
+        double cCafeItem = Double.parseDouble(jTextFieldCostOfCafeItem.getText());
         double nCreamedPie = Double.parseDouble(jTextFieldCreamedPie.getText());
         double price = 230.00;
 
@@ -1170,23 +1171,23 @@ public class RestaurantManagementSystem extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBoxCreamedPieMouseClicked
 
     private void jButtonTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTotalActionPerformed
-       f[0]=Double.parseDouble(jTextFieldCostOfFoodItem.getText());
-       f[1]=Double.parseDouble(jTextFieldCostOfCafeItem.getText());
-       f[2]=Double.parseDouble(jTextFieldServiceCharge.getText());
-       
-       double cTotal=(f[0]+f[1]+f[2]);
-       
-       String iTaxTotal=String.format("Rs. %.2f", cTotal/100);
-       jTextFieldFoodTax.setText(iTaxTotal);
-       
-       double subTotal=(cTotal);
-       String iSubTotal=String.format("Rs %.2f", subTotal );
-       jTextFieldSubTotal.setText(iSubTotal);
-       
-       double allTotal=(cTotal);
-       double serviceCharge=100.00;
-       String iTotal=String.format("Rs %.2f", allTotal+(allTotal/100)+serviceCharge);
-       jTextFieldTotal.setText(iTotal);
+        f[0] = Double.parseDouble(jTextFieldCostOfFoodItem.getText());
+        f[1] = Double.parseDouble(jTextFieldCostOfCafeItem.getText());
+        f[2] = Double.parseDouble(jTextFieldServiceCharge.getText());
+
+        double cTotal = (f[0] + f[1] + f[2]);
+
+        String iTaxTotal = String.format("Rs. %.2f", cTotal / 100);
+        jTextFieldFoodTax.setText(iTaxTotal);
+
+        double subTotal = (cTotal);
+        String iSubTotal = String.format("Rs %.2f", subTotal);
+        jTextFieldSubTotal.setText(iSubTotal);
+
+        double allTotal = (cTotal);
+        double serviceCharge = 100.00;
+        String iTotal = String.format("Rs %.2f", allTotal + (allTotal / 100) + serviceCharge);
+        jTextFieldTotal.setText(iTotal);
     }//GEN-LAST:event_jButtonTotalActionPerformed
 
     private void jTextFieldTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldTotalActionPerformed
@@ -1204,10 +1205,12 @@ public class RestaurantManagementSystem extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+                UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+
             }
         } catch (ClassNotFoundException ex) {
             java.util.logging.Logger.getLogger(RestaurantManagementSystem.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
